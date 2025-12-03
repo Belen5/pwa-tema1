@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 1 - Actividad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Tema 1: Números y Sistemas de Numeración</h1>
+    </header>
+
+    <section class="card pastel-rosa">
+        <h2>Valor posicional</h2>
+        <p>
+            El valor posicional indica el valor que tiene un dígito según el lugar que ocupa en un número.
+            Por ejemplo, en el número <strong>352</strong>, el 3 vale 300, el 5 vale 50 y el 2 vale 2.
+        </p>
+    </section>
+
+    <section class="card pastel-azul">
+        <h2>Comparación de números</h2>
+        <p>Para comparar números usamos los signos:</p>
+        <ul>
+            <li><strong>></strong> mayor que</li>
+            <li><strong><</strong> menor que</li>
+            <li><strong>=</strong> igual que</li>
+        </ul>
+    </section>
+
+    <h2>Actividad interactiva</h2>
+
+    <div class="actividad">
+        <p>¿Cuál número es mayor?</p>
+
+        <div id="numeros">
+            <span id="num1"></span>
+            <span id="num2"></span>
+        </div>
+
+        <button onclick="respuesta('num1')" class="btn-opcion">Elegir número 1</button>
+        <button onclick="respuesta('num2')" class="btn-opcion">Elegir número 2</button>
+
+        <p id="resultado"></p>
+        <p id="explicacion"></p>
+
+        <button onclick="generarNumeros()" class="btn">Nuevo ejercicio</button>
+    </div>
+
+    <h2>Autoevaluación</h2>
+
+    <div class="autoeval card pastel-verde">
+        <p><strong>1.</strong> ¿Cuál es el valor posicional del 6 en 462?</p>
+        <label><input type="radio" name="p1" value="a"> 600</label>
+        <label><input type="radio" name="p1" value="b"> 60</label>
+        <label><input type="radio" name="p1" value="c"> 6</label>
+
+        <p><strong>2.</strong> ¿Qué número es mayor?</p>
+        <label><input type="radio" name="p2" value="a"> 0.28</label>
+        <label><input type="radio" name="p2" value="b"> 1/2</label>
+        <label><input type="radio" name="p2" value="c"> 0.75</label>
+
+        <p><strong>3.</strong> ¿Cuál fracción es mayor?</p>
+        <label><input type="radio" name="p3" value="a"> 1/4</label>
+        <label><input type="radio" name="p3" value="b"> 3/4</label>
+        <label><input type="radio" name="p3" value="c"> 2/5</label>
+
+        <button class="btn" onclick="verificarAutoeval()">Verificar</button>
+        <p id="resultadoAutoeval"></p>
+    </div>
+
+    <a href="index.html" class="btn volver">Volver</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
